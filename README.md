@@ -24,4 +24,7 @@ There will be a few things you will need in order to run this program on your ma
    the " " and replacing the tokenswebhook text. After you do that do the same for the detailswebhook and making sure its integrated with the detailschannel. Once you complete 
    them both you can save the config file and exit out of it.
    
+# Unlimited Emails
+   - This program needs emails for it to work. Having trouble on making emails well you can create unlimited emails using this simple gmail trick. First of all you need a gmail    account, then you need to download this program. [Gmail Trick Download](https://cdn.discordapp.com/attachments/785257080436949052/791703611612332092/Gmail_Dot_Trick.exe)
+   After downloading it you open the program and input your gmail account. Once its completed, you will see a new txt file named your gmail address open it and copy all of the      emails and copy and paste it to the emails.txt in the "Discord Creator" folder.
    
