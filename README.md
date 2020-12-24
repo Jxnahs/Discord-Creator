@@ -22,6 +22,6 @@ There will be a few things you will need in order to run this program on your ma
 # Config file setup
    - Open the config file with notepad. You can do this by right clicking the "config.json" and then "open with" then with notepad. You then need to make a discord server and        create two channels called tokens and tokendetails. Once you have done that create a webhook in tokens and copy the webhook url and paste it in the config.json file in-between
    the " " and replacing the tokenswebhook text. After you do that do the same for the detailswebhook and making sure its integrated with the detailschannel. Once you complete 
-   them both you can save the config file and exit out of it.
+   them both you can save the config file and exit out of it. [Click here for a video on how to make a discord webhook](https://www.youtube.com/watch?v=zxi926qhP7w)
    
    
