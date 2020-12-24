@@ -2,7 +2,7 @@
 Welcome to the Discord-Creator. Discord Creator is a Python program, that creates accounts, generates nitro codes and has a token checker.
 
 
-# Requirements
+# Requirements / Setting up
 There will be a few things you will need in order to run this program on your machine.
 1. Downloading the creator
    - There will be a bright green button which says "Code" on the top right of this repo. Click it and click download as zip, and once it downloads extract it to your desktop.
@@ -15,3 +15,7 @@ There will be a few things you will need in order to run this program on your ma
    - You will need to download nordvpn, No need to worry about buying a subscription I already have accounts for you to use. If the accounts don't work, add my discord Jonah#1337    I will give you a valid account. You're probably thinking why do we need nordvpn? Well the answer is this is used to bypass discord ratelimits everytime you try to create a        account it will change your ip address meaning you can bypass discord rate limits.
    
 4. Downloading the Python Modules
+   - Once you have done the steps above you need to open the file named "Modules" or "Modules.bat", this will install all the python modules you need to run the program. After you 
+   done these steps you're almost set.
+   
+   
