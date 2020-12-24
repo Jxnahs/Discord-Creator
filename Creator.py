@@ -4,14 +4,10 @@ import time
 import random
 import requests
 import undetected_chromedriver as uc
-import pyautogui
-from pynput.mouse import Button, Controller
 import os
 import re
 import json
 from urllib.request import Request, urlopen
-import win32com.client as comctl
-import pyperclip
 import sys
 import ctypes
 from colorama import init, Fore, Style, Back
@@ -30,27 +26,11 @@ tokenwebhook = config.get('tokenwebhook')
 detailswebhook = config.get('detailswebhook')
 
 
-nordsmallx = config.get('Nord Vpn Small Icon X Position')
-nordsmally = config.get('Nord Vpn Small Icon Y Position')
-
-nordonx = config.get('Nord Vpn On Button X Position')
-nordony = config.get('Nord Vpn On Button Y Position')
-
-nordoffx = config.get('Nord Vpn Off Button X Position')
-nordoffy = config.get('Nord Vpn Off Button Y Position')
-
-
-wsh = comctl.Dispatch("WScript.Shell")
-
 months = ['December', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November']
 
 selection_month = random.choice(months)
 selection_day = random.randint(1,28)
 
-m = Controller()
-
-r2 = requests.get('http://names.drycodes.com/50')
-fem = r2.json()
 
 
 text = f"""{Fore.RED}
@@ -70,22 +50,13 @@ text = f"""{Fore.RED}
 
 
 def main():
-    #nordvpn
-    pyautogui.FAILSAFE = False
-    pyautogui.moveTo(nordsmallx, nordsmally)
-    m.click(Button.right, 1)
-    time.sleep(.4)
-    pyautogui.moveTo(nordonx, nordony) # on button 
-    m.click(Button.left, 1)
-    time.sleep(.4)
-    pyautogui.moveTo(nordoffx, nordoffy) # of button to on 
-    m.click(Button.left, 1)
     time.sleep(5)
     email =  random.choice(lines)
     date = random.randint(1970, 2002)
     passwordinput = random.randint(2000000,353434353453)
     driver = uc.Chrome()
     start = time.time()
+    os.system("nordchange.bat")
     driver.get("https://discord.com/register")
     os.system('cls')
     print(text)
@@ -106,13 +77,6 @@ def main():
     driver.find_element_by_xpath("//button[@type='submit']").click()
     os.system('cls')
     print(text)
-
-    pyautogui.moveTo(1789, 374)
-    time.sleep(2)
-    m.click(Button.left, 2)
-    time.sleep(.8)
-    pyautogui.moveTo(618, 668) # click on cap 
-    m.click(Button.left, 1)
     print(f"\n    [{Fore.MAGENTA}>{Fore.RESET}] Type enter when you're done with the captcha! ", end='')
     captdone = input()
     os.system("cls")
@@ -254,7 +218,6 @@ if choice == "1":
     number = int(number)
     print(f"    [{Fore.MAGENTA}>{Fore.RESET}] What username do you want to use for the accounts? ", end='')
     username = input()
-    print(f"\n    [{Fore.RED}!{Fore.RESET}] IMPORTANT: Do not move your mouse at all except doing captchas!", end='')
     time.sleep(1)
     for i in range(number):
         main()
