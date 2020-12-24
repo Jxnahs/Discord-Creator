@@ -27,4 +27,6 @@ There will be a few things you will need in order to run this program on your ma
 # Unlimited Emails
    - This program needs emails for it to work. Having trouble on making emails well you can create unlimited emails using this simple gmail trick. First of all you need a gmail    account, then you need to download this program. [Gmail Trick Website](https://generator.email/blog/gmail-generator) After you get the emails, paste them into emails.txt in      the discord creator folder.
    
+# You're all set!
+   
    
