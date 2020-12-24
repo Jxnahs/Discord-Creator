@@ -57,6 +57,7 @@ def main():
     driver = uc.Chrome()
     start = time.time()
     os.system("nordchange.bat")
+    time.sleep(5)
     driver.get("https://discord.com/register")
     os.system('cls')
     print(text)
