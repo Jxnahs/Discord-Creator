@@ -18,4 +18,7 @@ There will be a few things you will need in order to run this program on your ma
    - Once you have done the steps above you need to open the file named "Modules" or "Modules.bat", this will install all the python modules you need to run the program. After you 
    done these steps you're almost set.
    
+
+# Config file setup
+   
    
