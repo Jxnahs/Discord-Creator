@@ -1,2 +1,2 @@
 # Discord Creator
-Welcome to the Discord-Creator Github page. Discord Creator is a Python program, That creates accounts, generates nitro codes and has a token checker.
+Welcome to the Discord-Creator. Discord Creator is a Python program, that creates accounts, generates nitro codes and has a token checker.
