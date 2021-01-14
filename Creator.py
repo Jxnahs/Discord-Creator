@@ -23,7 +23,7 @@ with open('config.json') as f:
     config = json.load(f)
 
 tokenwebhook = config.get('tokenwebhook')
-detailswebhook = config.get('detailswebhook')
+
 
 
 months = ['December', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November']
@@ -116,14 +116,7 @@ def main():
         webhook = DiscordWebhook(url=f'{tokenwebhook}', content=f'{token}')
         response = webhook.execute()
 
-        accdetails = f'''
-        ```Email: {email}
-Username: {username}
-Password: {passwordinput}
-Time Taken: {end - start} seconds``` '''
 
-        details = DiscordWebhook(url=f'{detailswebhook}', content=f'{accdetails}')
-        response2 = details.execute()
     
 
 
